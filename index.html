@@ -28,14 +28,14 @@
       </div>
     </header>
     <div id="home">
-      <div class="navbar">
+      <div class="navbar hidden-phone">
         <div class="navbar-inner">
           <ul class="nav">
             <li><a href="#home">Home</a></li>
             <li><a href="#wedding">The Wedding</a></li>
             <li><a href="#directions">Directions</a></li>
-            <li><a href="#photos">Photos</a></li>
-            <li><a href="#portland">Portland</a></li>
+            <li class="hidden-tablet"><a href="#photos">Photos</a></li>
+            <li class="hidden-tablet"><a href="#portland">Portland</a></li>
             <li><a href="#registry">Registry</a></li>
             <li><a href="#rsvp-form">RSVP</a></li>
           </ul>
@@ -61,9 +61,6 @@
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
                   <p> Historic Overlook House 3839 N Melrose Dr Portland, OR 97227</p>
                   <p>Add it to your calendar! <a href="http://www.google.com/calendar/event?action=TEMPLATE&text=Zachary%20and%20Seyoung's%20Wedding&dates=20130914/20130914&details=Zachary%20and%20Seyoung%20invite%20you%20to%20take%20part%20in%20their%20wedding%20in%20Portland%20OR%20at%20the%20Historic%20Overlook%20House.%20%0A%0A3839%20N%20Melrose%20Dr%0APortland%2C%20OR%2097227%0A(503)%20823-3188%0Ahistoricoverlookhouse.org%E2%80%8E&location=Portland%20Oregon&trp=false&sprop=Zachary%20and%20Seyoung&sprop=name:zacharyandseyoung.com" target="_blank">Export to Google Calander!</a></p>
-                </div>
-                <div class="span6">
-                  <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Overlook+House,+Portland+OR&amp;aq=&amp;sll=45.543408,-122.654422&amp;sspn=0.384724,0.727158&amp;ie=UTF8&amp;hq=Overlook+House,&amp;hnear=Portland,+Multnomah,+Oregon&amp;t=m&amp;cid=940679019455240750&amp;ll=45.589777,-122.678833&amp;spn=0.084089,0.145912&amp;z=12&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Overlook+House,+Portland+OR&amp;aq=&amp;sll=45.543408,-122.654422&amp;sspn=0.384724,0.727158&amp;ie=UTF8&amp;hq=Overlook+House,&amp;hnear=Portland,+Multnomah,+Oregon&amp;t=m&amp;cid=940679019455240750&amp;ll=45.589777,-122.678833&amp;spn=0.084089,0.145912&amp;z=12&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small>
                 </div>
               </div>
             </div>
@@ -134,9 +131,6 @@
                 <div class="span6">
                   <p>We have called Portland our home since 2010. Even though we have traveled all over the world together we still look forward to returning home here.</p>
                   <p>We think Portland is pretty awesome, and hope you will think so to. To help you along in your journey of discovery we have created a list of our favorite places to see and thinkgs do while in Portland. So even after the festivities have ended you will hopefully have something awesome to do.</p>
-                </div>
-                <div class="span6">
-                  <iframe src="http://player.vimeo.com/video/41011190?byline=0&amp;color=ff9933" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/41011190">Finding Portland</a> from <a href="http://vimeo.com/uncagethesoul">Uncage the Soul Productions</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
                 </div>
               </div>
 
@@ -223,12 +217,25 @@
       </div>
     </div>
     <footer>
+      <div class="container">
+        <div class="row">
+          <div class="span4">
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+          </div>
+          <div class="span4">
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+          </div>
+          <div class="span4">
+            <p>Designed by <a href="http://zadell.com">Zachary Zadell</a></p>
+          </div>
+        </div>
+      </div>
     </footer>
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.sticky.js"></script>
     <script>
-      $(".navbar").sticky({topSpacing:0, className:'stuck'});
+      $(".navbar").sticky({topSpacing:0, className:'stuck',wrapperClassName:'hidden-phone'});
       $('ul.nav li a').bind('click', function(e) {
          e.preventDefault();
          $('html, body').animate({ scrollTop: $(this.hash).offset().top - 65 }, 300);

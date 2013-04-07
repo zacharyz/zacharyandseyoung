@@ -70,7 +70,6 @@
   background: url(../img/white-fabric.png);
 }
 .section#directions, .section#registry { 
-  background: rgba(0, 0, 0, 0.0392157);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px inset, rgba(255, 255, 255, 0.701961) 0px 1px 0px;
 }
 .section#photos,.section#wedding,.section#rsvp-form {
@@ -207,3 +206,34 @@ ul.nav li a.home img {  }
 .page-header {
   border-bottom: none;
 }
+footer {
+  padding: 20px 0px;
+  background-color: #1E1E41;
+  color: #eee;
+}
+footer p {
+  color: #eee;
+}
+footer a:hover { color:#fafafa; }
+
+
+/* Large desktop */
+@media (min-width: 1200px) { }
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { ... }
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+  body {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) { }
