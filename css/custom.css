@@ -64,7 +64,18 @@
 }
 #home{
   color: #fafafa;
-  background: url(../img/blue-fabric-bg.png);
+  background: url(../img/white-fabric.png);
+}
+.section#wedding,.section#portland {
+  background: url(../img/white-fabric.png);
+}
+.section#directions, .section#registry { 
+  background: rgba(0, 0, 0, 0.0392157);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px inset, rgba(255, 255, 255, 0.701961) 0px 1px 0px;
+}
+.section#photos,.section#wedding,.section#rsvp-form {
+  background: url(../img/blue-fabric.png);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px inset, rgba(255, 255, 255, 0.701961) 0px 1px 0px;
 }
 
 
@@ -161,6 +172,8 @@ width: 70%;
 .navbar .navbar-inner {
   padding-top: 8px;
   padding-bottom: 8px;
+  background: url(../img/white-fabric.png);
+
 }
 .navbar .nav > li {
     float:none;
@@ -176,7 +189,7 @@ width: 70%;
 .navbar .nav>.active>a, .navbar .nav>.active>a:hover {
   background-color: #fafafa;
   -webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,0.125);
-  background-image: linear-gradient(to bottom,#fff,#f2f2f2);
+  background: url(../img/white-fabric.png);
 }
 ul.nav { list-style:none; margin:27px auto 0; width:90%; }
 ul.nav li { font-family:'MisoLight', Arial, Helvetica, sans-serif; font-size:1.6em; float:left; text-align:center; text-transform:uppercase; display:block; margin: 0 12px; }
@@ -192,5 +205,5 @@ ul.nav li a.home img {  }
 }
 
 .page-header {
-  border-bottom: 1px solid #656464;
+  border-bottom: none;
 }
