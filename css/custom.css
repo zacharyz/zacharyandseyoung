@@ -40,7 +40,8 @@
   z-index: 2;
 }
 
-
+.jumbotron #invitation-container {
+}
 .subhead {
   text-align: left;
   border-bottom: 1px solid #ddd;
@@ -221,7 +222,11 @@ footer a:hover { color:#fafafa; }
 @media (min-width: 1200px) { }
  
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) { ... }
+@media (min-width: 768px) and (max-width: 979px) { 
+  .subhead h1 {
+    font-size: 35px;
+  }
+}
  
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) { 
@@ -232,6 +237,18 @@ footer a:hover { color:#fafafa; }
   .container {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  h1,h2 {
+    text-align: center;
+  }
+  .jumbotron{
+    padding-top: 0px;
+  }
+  #home {
+    margin-top: 659px;
+  }
+  .subhead h1 {
+    font-size: 35px;
   }
 }
  
