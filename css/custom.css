@@ -62,8 +62,8 @@
 #wedding {
   padding-top: 20px;
 }
-.section {
-  color: #9999FF;
+#home{
+  color: #fafafa;
   background: url(../img/blue-fabric-bg.png);
 }
 
@@ -91,11 +91,7 @@
 }
 @font-face {
     font-family: 'MisoBold';
-    src: url('../fonts/miso-bold-webfont.eot');
-    src: url('../fonts/miso-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/miso-bold-webfont.woff') format('woff'),
-         url('../fonts/miso-bold-webfont.ttf') format('truetype'),
-         url('../fonts/miso-bold-webfont.svg#MisoBold') format('svg');
+    src: url('../fonts/miso-bold.ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -166,12 +162,35 @@ width: 70%;
   padding-top: 8px;
   padding-bottom: 8px;
 }
+.navbar .nav > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+    *zoom:1; /* hasLayout ie7 trigger */
+    vertical-align: top;
+}
+
+ .navbar-inner {
+    text-align:center;
+}
+.navbar .nav>.active>a, .navbar .nav>.active>a:hover {
+  background-color: #fafafa;
+  -webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,0.125);
+  background-image: linear-gradient(to bottom,#fff,#f2f2f2);
+}
 ul.nav { list-style:none; margin:27px auto 0; width:90%; }
 ul.nav li { font-family:'MisoLight', Arial, Helvetica, sans-serif; font-size:1.6em; float:left; text-align:center; text-transform:uppercase; display:block; margin: 0 12px; }
 ul.nav li a { color:#656464; border-top:1px solid transparent; border-bottom:1px solid transparent; display:block; padding: 4px 4px 3px; line-height:26px; }
 ul.nav li a:hover { color:#2b2b2b; border-top:1px solid #2b2b2b; border-bottom:1px solid #2b2b2b; }
-ul.nav li.current a { color:#2b2b2b; border-top:1px solid #2b2b2b; border-bottom:1px solid #2b2b2b; }
-ul.nav li.current a.home, nav ul li a.home { border-top:1px solid transparent; border-bottom:1px solid transparent; }
+ul.nav li.active a { color:#2b2b2b; border-top:1px solid #2b2b2b; border-bottom:1px solid #2b2b2b; }
+ul.nav li.active a.home, nav ul li a.home { border-top:1px solid transparent; border-bottom:1px solid transparent; }
 ul.nav li a.home:hover { border-top:1px solid #2b2b2b; border-bottom:1px solid #2b2b2b; }
 ul.nav li a.home img {  }
 
+.stuck .navbar {
+  width: 100%;
+}
+
+.page-header {
+  border-bottom: 1px solid #656464;
+}
