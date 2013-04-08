@@ -4,7 +4,7 @@
 }
 .jumbotron {
   padding-top: 99px;
-  background: url(http://distilleryimage11.s3.amazonaws.com/a291f060761111e2bb3e22000a1fb8a8_7.jpg);
+  background: url(http://farm9.staticflickr.com/8523/8630102578_ff6d271573_k.jpg);
   position: fixed;
   z-index: -100;
   top: 0px;
@@ -70,16 +70,13 @@
 }
 .section {
   padding-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px inset, rgba(255, 255, 255, 0.701961) 0px 1px 0px;
 }
-.section#wedding,.section#portland {
+.section#portland, .section#directions, .section#rsvp-form {
   background: url(../img/white-fabric.png);
 }
-.section#directions, .section#registry { 
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px inset, rgba(255, 255, 255, 0.701961) 0px 1px 0px;
-}
-.section#photos,.section#wedding,.section#rsvp-form {
+.section#photos,.section#wedding, .section#registry {
   background: url(../img/blue-fabric.png);
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px inset, rgba(255, 255, 255, 0.701961) 0px 1px 0px;
 }
 
 
@@ -213,13 +210,14 @@ ul.nav li a.home img {  }
 }
 footer {
   padding: 20px 0px;
-  background-color: #1E1E41;
+  background: url(../img/blue-fabric.png);
   color: #eee;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px inset, rgba(255, 255, 255, 0.701961) 0px 1px 0px;
 }
 footer p {
-  color: #eee;
+  color: #656464;
 }
-footer a:hover { color:#fafafa; }
+footer a:hover { color:#2b2b2b; }
 
 
 /* Large desktop */
