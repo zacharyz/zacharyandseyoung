@@ -12,6 +12,7 @@
   width: 100%;
   height: 666px; 
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .jumbotron h1 {
   font-size: 80px;
@@ -66,7 +67,7 @@
 }
 #home{
   color: #fafafa;
-  background: url(../img/white-fabric.png);
+  background: url(../img/white-fabric.png) #ffffff;
 }
 .section {
   padding-bottom: 20px;
@@ -221,6 +222,14 @@ footer a:hover { color:#2b2b2b; }
 
 
 /* Large desktop */
+@media (min-width: 1441px) {
+  .jumbotron{
+    height: 897px;
+  }
+  #home {
+    margin-top: 996px;
+  }
+}
 @media (min-width: 1200px) { }
  
 /* Portrait tablet to landscape and desktop */
@@ -228,6 +237,13 @@ footer a:hover { color:#2b2b2b; }
   .subhead h1 {
     font-size: 35px;
   }
+  .jumbotron{
+    padding-top: 41px;
+    background-size: 979px;
+  }
+  #home {
+    margin-top: 521px;
+  } 
 }
  
 /* Landscape phone to portrait tablet */
@@ -245,9 +261,11 @@ footer a:hover { color:#2b2b2b; }
   }
   .jumbotron{
     padding-top: 0px;
+    top: -40px;
+    background-size: 1500px;
   }
   #home {
-    margin-top: 659px;
+    margin-top: 407px;
   }
   .subhead h1 {
     font-size: 35px;
