@@ -225,12 +225,22 @@ footer a:hover { color:#2b2b2b; }
 @media (min-width: 1441px) {
   .jumbotron{
     height: 897px;
+    background-size: cover;
   }
   #home {
     margin-top: 996px;
   }
 }
-@media (min-width: 1200px) { }
+@media (min-width: 1280px) and (max-width:1440px) {
+  .jumbotron{
+    height: 666px;
+    background-size: cover;
+  }
+  #home {
+    margin-top: 765px;
+  }
+}
+
  
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) { 
