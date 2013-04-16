@@ -4,15 +4,15 @@
 }
 .jumbotron {
   padding-top: 99px;
-  background: url(http://farm9.staticflickr.com/8523/8630102578_ff6d271573_k.jpg);
+  background: url(http://farm9.staticflickr.com/8523/8630102578_7ed92156c0_k.jpg) no-repeat center center fixed;
+  min-height: 100%;
   position: fixed;
   z-index: -100;
   top: 0px;
-  margin: 0px auto;
+  left: 0px;
   width: 100%;
-  height: 666px; 
+  height: auto; 
   background-size: cover;
-  background-repeat: no-repeat;
 }
 .jumbotron h1 {
   font-size: 80px;
@@ -59,7 +59,7 @@
 }
 
 #home {
-  margin-top: 758px;
+  margin-top: 70%;
   box-shadow: rgba(0, 0, 0, 0.4) 0px -4px 15px;
 }
 #wedding {
@@ -68,6 +68,9 @@
 #home{
   color: #fafafa;
   background: url(../img/white-fabric.png) #ffffff;
+}
+#home ul>li {
+  color: #656464;
 }
 .section {
   padding-bottom: 20px;
@@ -223,22 +226,8 @@ footer a:hover { color:#2b2b2b; }
 
 /* Large desktop */
 @media (min-width: 1441px) {
-  .jumbotron{
-    height: 897px;
-    background-size: cover;
-  }
-  #home {
-    margin-top: 996px;
-  }
 }
 @media (min-width: 1280px) and (max-width:1440px) {
-  .jumbotron{
-    height: 666px;
-    background-size: cover;
-  }
-  #home {
-    margin-top: 765px;
-  }
 }
 
  
@@ -249,7 +238,6 @@ footer a:hover { color:#2b2b2b; }
   }
   .jumbotron{
     padding-top: 41px;
-    background-size: 979px;
   }
   #home {
     margin-top: 521px;
@@ -271,8 +259,7 @@ footer a:hover { color:#2b2b2b; }
   }
   .jumbotron{
     padding-top: 0px;
-    top: -40px;
-    background-size: 1500px;
+    background: url(http://farm9.staticflickr.com/8523/8630102578_7ed92156c0_k.jpg) no-repeat fixed;
   }
   #home {
     margin-top: 407px;
@@ -281,6 +268,7 @@ footer a:hover { color:#2b2b2b; }
     font-size: 35px;
   }
 }
+ 
  
 /* Landscape phones and down */
 @media (max-width: 480px) { }
