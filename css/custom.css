@@ -1,5 +1,6 @@
 #map-canvas { height: 100% }
 .navbar {
+  z-index: 1;
   margin-bottom: 0px;
 }
 .jumbotron {
