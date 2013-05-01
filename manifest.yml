@@ -1,0 +1,9 @@
+---
+applications:
+- name: za
+  framework: php
+  runtime: php
+  memory: 128M
+  instances: 1
+  url: www.za.aws.af.cm
+  path: .
