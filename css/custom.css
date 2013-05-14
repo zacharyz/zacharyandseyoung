@@ -225,7 +225,8 @@ footer p {
 }
 footer a:hover { color:#2b2b2b; }
 
-
+#monogram {
+}
 /* Large desktop */
 @media (min-width: 1441px) {
 }
